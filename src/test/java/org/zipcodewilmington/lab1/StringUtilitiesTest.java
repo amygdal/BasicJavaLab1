@@ -17,8 +17,8 @@ public class StringUtilitiesTest {
     public void testUniqueStringWithMultipleValues(){
         String value = "abracadabra";
         String expected = "abrcd";
-//        String actual = StringUtilities.unique(value);
-//        Assert.assertEquals(expected, actual);
+        String actual = StringUtilities.unique(value);
+        Assert.assertEquals(expected, actual);
     }
 
 

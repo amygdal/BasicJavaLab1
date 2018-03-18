@@ -1,7 +1,6 @@
 package org.zipcodewilmington.lab1;
 
 public class StringUtilities {
-    String input;
 
     public static String unique(String value) {
         String answer = "";
