@@ -11,24 +11,24 @@ public class ArrayUtilitiesTest {
     public void testMoveLastToFirstWithOneItem(){
         int[] values = {4};
         int[] expected = {4};
-//        ArrayUtilities.moveLastToFirst(values);
-//        Assert.assertArrayEquals(expected, values);
+        ArrayUtilities.moveLastToFirst(values);
+        Assert.assertArrayEquals(expected, values);
     }
 
     @Test
     public void testMoveLastToFirstWithTwoItems(){
         int[] values = {13, 8};
         int[] expected = {8, 13};
-//        ArrayUtilities.moveLastToFirst(values);
-//        Assert.assertArrayEquals(expected, values);
+        ArrayUtilities.moveLastToFirst(values);
+        Assert.assertArrayEquals(expected, values);
     }
 
     @Test
     public void testMoveLastToFirst(){
         int[] values = {4, 6, 2, 9};
         int[] expected = {9, 4, 6, 2};
-//        ArrayUtilities.moveLastToFirst(values);
-//        Assert.assertArrayEquals(expected, values);
+        ArrayUtilities.moveLastToFirst(values);
+        Assert.assertArrayEquals(expected, values);
     }
 
     @Test
