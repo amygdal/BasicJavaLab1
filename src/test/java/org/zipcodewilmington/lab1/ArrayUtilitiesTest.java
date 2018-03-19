@@ -35,48 +35,48 @@ public class ArrayUtilitiesTest {
     public void testRemoveDuplicateWithOnlyOneItem(){
         int[] values = {12};
         int[] expected = {12};
-//        int[] actual = ArrayUtilities.removeDuplicate(values);
-//        Assert.assertArrayEquals(expected, actual);
+        int[] actual = ArrayUtilities.removeDuplicate(values);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test
     public void testRemoveDuplicateWithSameValue(){
         int[] values = {5, 5};
         int[] expected = {5};
-//        int[] actual = ArrayUtilities.removeDuplicate(values);
-//        Assert.assertArrayEquals(expected, actual);
+        int[] actual = ArrayUtilities.removeDuplicate(values);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test
     public void testRemoveDuplicate(){
         int[] values = {4, 4, 6, 2, 9, 9, 9, 9};
         int[] expected = {4, 6, 2, 9};
-//        int[] actual = ArrayUtilities.removeDuplicate(values);
-//        Assert.assertArrayEquals(expected, actual);
+        int[] actual = ArrayUtilities.removeDuplicate(values);
+        Assert.assertArrayEquals(expected, actual);
     }
 
     @Test
     public void testMeanWithOneItem(){
         int[] values = {5};
         double expected = 5.0;
-//        double actual = ArrayUtilities.mean(values);
-//        Assert.assertEquals(expected, actual, 0.10);
+        double actual = ArrayUtilities.mean(values);
+        Assert.assertEquals(expected, actual, 0.10);
     }
 
     @Test
     public void testMeanWithTwoItem(){
         int[] values = {2, 4};
         double expected = 3.0;
-//        double actual = ArrayUtilities.mean(values);
-//        Assert.assertEquals(expected, actual, 0.10);
+        double actual = ArrayUtilities.mean(values);
+        Assert.assertEquals(expected, actual, 0.10);
     }
 
     @Test
     public void testMean(){
         int[] values = {3, 5, 8, 1};
-        double expected = 8.5;
+        double expected = 4.25;
 
-//        double actual = ArrayUtilities.mean(values);
-//        Assert.assertEquals(expected, actual, 0.10);
+        double actual = ArrayUtilities.mean(values);
+        Assert.assertEquals(expected, actual, 0.10);
     }
 }
